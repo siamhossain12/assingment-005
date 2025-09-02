@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="clock" class="font-bold text-xl text-blue-600"></p>
+
+<script>
+function updateTime() {
+  const now = new Date();
+  const timeString = now.toLocaleTimeString(); // e.g. 12:34:56 PM
+  document.getElementById("clock").innerText = timeString;
+}
+
+
+updateTime();
+
+
+
+</script>
+
+</body>
+</html>
