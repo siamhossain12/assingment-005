@@ -1,6 +1,6 @@
 // function for coin
 
-function callnow(id,number){
+function callnow(id,number,historyName,hnumber){
    
              let value=parseInt(document.getElementById(id).innerText) 
              const numberr=document.getElementById(number).innerText;
@@ -9,6 +9,7 @@ function callnow(id,number){
               if(value>19) {
                  value=value-20;
                  alert("you are calling at "+numberr )
+                 history(historyName,hnumber);
                  return value;
               }
              else{
@@ -32,7 +33,7 @@ function callnow(id,number){
   "rounded-xl",
   "flex",
   "justify-between",
-  "bg-[#f5fff6]",
+  "bg-[#fafafa]",
   "p-2.5"
 );
 
@@ -80,15 +81,18 @@ function callnow(id,number){
 
           }
 
-
-
+        //  function of copy
+        
 
 
         //   function call for calling
 
         document.getElementById('call1').addEventListener("click",function(){
-            const newValue = callnow('coinvalue','number1');
+            const newValue = callnow('coinvalue','number1','historyName','number1');
            coinvalue.innerText=newValue;
-           history('historyName','number1');
+           
+           
         })
-        
+        //  function caii for copy
+
+     document
